@@ -1,4 +1,4 @@
-
+/* Reset e Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,53 +6,104 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    line-height: 1.6;
+    color: #000000;
+}
+
 /* Navbar */
 .navbar {
-    background-color: #000000;
-    position: fixed;
-    width: 100%;
+    background-color: #1340ab;
     padding: 20px;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-
 .nav-links {
     display: flex;
-    justify-content: right;
-    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
+    gap: 30px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #000000;
+}
 
+.name {
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+}
 
 /* Seção Hero */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgb(95, 93, 93), rgb(255, 255, 255)), url('https://source.unsplash.com/random/1920x1080');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    padding: 100px 20px;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+.bio-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 500;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bio-text h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-indent: 40px;
+    vertical-align: baseline;
+    text-align: justify;
+}
+
+/* Seção Habilidades */
+.skills {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    background-color: #1340ab;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
 }
 
 /* Seção Projetos */
 .projects {
     padding: 80px 20px;
-    background-color: #f9f9f9;
 }
 
 .projects-grid {
@@ -60,7 +111,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .project-card {
@@ -85,43 +136,59 @@
     padding: 20px;
 }
 
-/* Seção Habilidades */
-.skills {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    max-width: 800px;
-    margin: 30px auto;
-}
-
-.skill-item {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #1340ab;
     color: white;
     text-align: left;
-    padding: 20px;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Estilos para os ícones */
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: left;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 3rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000000; /* Cor ao passar o mouse */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
+    .bio-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
     }
 
     .nav-links {
-        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        order: -1;
     }
 }
