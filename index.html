@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Luiz - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="#inicio">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contato">Contato</a></li>
             <li class="name">João Luiz Souza Pereira</li>
+            <li>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -43,6 +49,45 @@
         </div>
     </section>
 
+    <section class="projects" id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <!-- Item 1 -->
+                <div class="carousel-item">
+                    <a href="https://github.com/joaoluiz00/xhopii" target="_blank" class="project-link">
+                        <div class="project-card">
+                            <img src="projeto.png" alt="Projeto Xhopii">
+                            <div class="project-info">
+                                <h3>Xhopii</h3>
+                                <p>Projeto anual realizado na matéria de Estrutura de Dados onde o objetivo era fazer um e-commerce similar à Shopee</p>
+                                <span class="project-url">Visitar Projeto →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Item 2 -->
+                <div class="carousel-item">
+                    <a href="https://github.com/joaoluiz00/JDB" target="_blank" class="project-link">
+                        <div class="project-card">
+                            <img src="projeto2.jpeg" alt="Projeto 2">
+                            <div class="project-info">
+                                <h3>JDB</h3>
+                                <p>Projeto ainda em desenvolvimento, com o objetivo de fazer um e-commerc gamificado inspirado em pokemon</p>
+                                <span class="project-url">Visitar Projeto →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Botões de Controle -->
+            <button class="carousel-btn prev-btn">&#10094;</button>
+            <button class="carousel-btn next-btn">&#10095;</button>
+        </div>
+    </section>
+
     <section class="skills" id="habilidades">
         <h2>Já trabalhei com:</h2>
         <div class="skills-list">
@@ -53,6 +98,7 @@
             <span class="skill-item">Vue</span>
             <span class="skill-item">Designer</span>
             <span class="skill-item">Edição</span>
+            <span class="skill-item">GameMaker</span>
         </div>
     </section>
 
@@ -72,7 +118,7 @@
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
-    <p>© 2025 João Luiz Souza Pereira. Todos os direitos reservados.</p>
+    <p>© 2025 - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
