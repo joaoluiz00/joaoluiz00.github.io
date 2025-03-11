@@ -1,124 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Luiz - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Luiz - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li class="name">João Luiz Souza Pereira</li>
-            <li>
-                <button id="theme-toggle" class="theme-btn">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </li>
-        </ul>
-    </nav>
+  <nav class="navbar fade-in">
+    <button class="menu-mobile">☰</button>
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li class="name">João Luiz Souza Pereira</li>
+      <li>
+        <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
 
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <div class="bio-section">
-                <img src="joao.jpg" alt="João Luiz" class="profile-photo">
-                <div class="bio-text">
-                    <h1>Olá, eu sou o João Luiz</h1>
-                    <p>  Técnico em Desenvolvimento de Sistemas com formação focada na criação de soluções tecnológicas eficientes.
-                         Atualmente cursando Análise e Desenvolvimento de Sistemas na Fatec de Presidente Prudente,
-                          onde estou ampliando meus conhecimentos em tecnologias modernas e melhores práticas de desenvolvimento de software.
-                    </p>
-                    <br>
-                       <p>Possuo experiência prática no desenvolvimento web, com domínio em HTML, CSS, JavaScript e PHP, além de conhecimento no framework Vue.js.
-                        Constantemente busco aprimorar minhas habilidades e aprender novas tecnologias para entregar projetos robustos e de alta qualidade.
-                       </p>
-                       <br>
-                        <p>
-                            Meu objetivo profissional é contribuir com o desenvolvimento de sistemas inovadores que gerem valor real para usuários e organizações.
-                         Atualmente, estou em busca de uma oportunidade de estágio onde possa aplicar meus conhecimentos, aprender com profissionais experientes e crescer junto com a empresa
-                   
-                        </p>
-                </div>
+  <section class="hero fade-in" id="inicio">
+    <div class="hero-content">
+      <div class="bio-section">
+        <img src="joao.jpg" alt="João Luiz" class="profile-photo">
+        <div class="bio-text">
+          <h1>Olá, eu sou o João Luiz</h1>
+          <p>
+            Técnico em Desenvolvimento de Sistemas com formação focada na criação de soluções tecnológicas eficientes. Atualmente cursando Análise e Desenvolvimento de Sistemas na Fatec de Presidente Prudente, onde estou ampliando meus conhecimentos em tecnologias modernas e melhores práticas de desenvolvimento de software.
+          </p>
+          <br>
+          <p>
+            Possuo experiência prática no desenvolvimento web, com domínio em HTML, CSS, JavaScript e PHP, além de conhecimento no framework Vue.js. Constantemente busco aprimorar minhas habilidades e aprender novas tecnologias para entregar projetos robustos e de alta qualidade.
+          </p>
+          <br>
+          <p>
+            Meu objetivo profissional é contribuir com o desenvolvimento de sistemas inovadores que gerem valor real para usuários e organizações. Atualmente, estou em busca de uma oportunidade de estágio onde possa aplicar meus conhecimentos, aprender com profissionais experientes e crescer junto com a empresa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects fade-in" id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <!-- Item 1 -->
+        <div class="carousel-item">
+          <a href="https://github.com/joaoluiz00/xhopii" target="_blank" class="project-link">
+            <div class="project-card">
+              <img src="projeto.png" alt="Projeto Xhopii" loading="lazy">
+              <div class="project-info">
+                <h3>Xhopii</h3>
+                <p>
+                  Projeto anual realizado na matéria de Estrutura de Dados onde o objetivo era fazer um e-commerce similar à Shopee.
+                </p>
+                <span class="project-url">Visitar Projeto →</span>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
 
-    <section class="projects" id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <!-- Item 1 -->
-                <div class="carousel-item">
-                    <a href="https://github.com/joaoluiz00/xhopii" target="_blank" class="project-link">
-                        <div class="project-card">
-                            <img src="projeto.png" alt="Projeto Xhopii">
-                            <div class="project-info">
-                                <h3>Xhopii</h3>
-                                <p>Projeto anual realizado na matéria de Estrutura de Dados onde o objetivo era fazer um e-commerce similar à Shopee</p>
-                                <span class="project-url">Visitar Projeto →</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-    
-                <!-- Item 2 -->
-                <div class="carousel-item">
-                    <a href="https://github.com/joaoluiz00/JDB" target="_blank" class="project-link">
-                        <div class="project-card">
-                            <img src="projeto2.jpeg" alt="Projeto 2">
-                            <div class="project-info">
-                                <h3>JDB</h3>
-                                <p>Projeto ainda em desenvolvimento, com o objetivo de fazer um e-commerc gamificado inspirado em pokemon</p>
-                                <span class="project-url">Visitar Projeto →</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <!-- Item 2 -->
+        <div class="carousel-item">
+          <a href="https://github.com/joaoluiz00/JDB" target="_blank" class="project-link">
+            <div class="project-card">
+              <img src="projeto2.jpeg" alt="Projeto 2" loading="lazy">
+              <div class="project-info">
+                <h3>JDB</h3>
+                <p>
+                  Projeto ainda em desenvolvimento, com o objetivo de fazer um e-commerce gamificado inspirado em Pokémon.
+                </p>
+                <span class="project-url">Visitar Projeto →</span>
+              </div>
             </div>
-    
-            <!-- Botões de Controle -->
-            <button class="carousel-btn prev-btn">&#10094;</button>
-            <button class="carousel-btn next-btn">&#10095;</button>
+          </a>
         </div>
-    </section>
 
-    <section class="skills" id="habilidades">
-        <h2>Já trabalhei com:</h2>
-        <div class="skills-list">
-            <span class="skill-item">HTML</span>
-            <span class="skill-item">CSS</span>
-            <span class="skill-item">JavaScript</span>
-            <span class="skill-item">PHP</span>
-            <span class="skill-item">Vue</span>
-            <span class="skill-item">Designer</span>
-            <span class="skill-item">Edição</span>
-            <span class="skill-item">GameMaker</span>
+        <div class="carousel-item">
+          <a href="https://github.com/Arthur-nonaka/EnsinoEstruturaDeDados" target="_blank" class="project-link">
+            <div class="project-card">
+              <img src="dados.png" alt="Projeto 3" loading="lazy">
+              <div class="project-info">
+                <h3>Site Educacional</h3>
+                <p>
+                  Nesse Projeto eu e meu grupo criamos um site educacional gamificado para ensinar o básico de Estrutura de Dados.
+                </p>
+                <span class="project-url">Visitar Projeto →</span>
+              </div>
+            </div>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <footer id="contato">
-      
-        <div class="social-icons">
-            <a href="https://github.com/joaoluiz00" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/joão-luiz-s-pereira-1015b9250" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:joao.luiz.souza.pereira@gmail.com" aria-label="E-mail">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/5518998187609" target="_blank" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
+      <!-- Botões de Controle do Carousel -->
+      <button class="carousel-btn prev-btn">&#10094;</button>
+      <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="skills fade-in" id="habilidades">
+    <h2>Já trabalhei com:</h2>
+    <div class="skills-list" role="list">
+      <div class="skill-item" role="listitem">HTML</div>
+      <div class="skill-item" role="listitem">CSS</div>
+      <div class="skill-item" role="listitem">JavaScript</div>
+      <div class="skill-item" role="listitem">PHP</div>
+      <div class="skill-item" role="listitem">Vue</div>
+      <div class="skill-item" role="listitem">Design</div>
+      <div class="skill-item" role="listitem">Edição</div>
+      <div class="skill-item" role="listitem">GameMaker</div>
+    </div>
+  </section>
+
+  <footer class="fade-in" id="footer">
+    <div class="social-icons">
+      <a href="https://github.com/joaoluiz00" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/joão-luiz-s-pereira-1015b9250" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:joao.luiz.souza.pereira@gmail.com" aria-label="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5518998187609" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
     <p>© 2025 - Todos os direitos reservados.</p>
-    </footer>
+  </footer>
 </body>
 </html>
