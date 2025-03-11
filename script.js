@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Menu Mobile
   const menuMobile = document.querySelector('.menu-mobile');
   const navLinks = document.querySelector('.nav-links');
   menuMobile.addEventListener('click', () => {
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Carousel Navigation
   const carouselSlide = document.querySelector('.carousel-slide');
   const carouselItems = document.querySelectorAll('.carousel-item');
   let currentIndex = 0;
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 
-  // Dark Mode Toggle
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   themeToggle.addEventListener('click', () => {
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateThemeIcon();
   });
 
-  // Efeito Fade-In ao Scroll com IntersectionObserver
   const faders = document.querySelectorAll('.fade-in');
   const appearOptions = {
     threshold: 0.3,

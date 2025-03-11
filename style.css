@@ -1,4 +1,4 @@
-/* Reset e Configurações Gerais */
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
   color: #000;
 }
 
-/* Modo Noturno */
+
 body.dark-mode {
   background-color: var(--dark-bg);
   color: var(--dark-text);
@@ -71,7 +71,7 @@ body.dark-mode .skills-list .skill-item:hover {
   color: #ccc;
 }
 
-/* Botão de Dark Mode */
+
 .theme-btn {
   border: none;
   background-color: #fff;
@@ -95,7 +95,7 @@ body.dark-mode .theme-btn {
   color: #fff;
 }
 
-/* Carousel Styling */
+
 .carousel-container {
   position: relative;
   overflow: hidden;
@@ -113,7 +113,7 @@ body.dark-mode .theme-btn {
   padding: 10px;
 }
 
-/* Botões de Navegação do Carousel */
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -139,7 +139,6 @@ body.dark-mode .theme-btn {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* Cards de Projeto */
 .project-card {
   background: white;
   border: 1px solid #e0e0e0;
@@ -171,7 +170,6 @@ body.dark-mode .theme-btn {
   color: var(--primary-color);
 }
 
-/* Remove a coloração azul dos links dos projetos */
 .project-link,
 .project-link:visited,
 .project-link:active,
@@ -192,7 +190,6 @@ body.dark-mode .theme-btn {
   opacity: 0.8;
 }
 
-/* Navbar */
 .navbar {
   background-color: var(--primary-color);
   padding: 20px;
@@ -260,7 +257,6 @@ body.dark-mode .theme-btn {
   }
 }
 
-/* Seção Hero */
 .hero {
   padding: 100px 20px;
 }
@@ -293,7 +289,7 @@ body.dark-mode .theme-btn {
   text-align: justify;
 }
 
-/* Seção Habilidades */
+
 .skills {
   padding: 80px 20px;
   background-color: #f8f9fa;
@@ -316,12 +312,10 @@ body.dark-mode .theme-btn {
   font-size: 0.9rem;
 }
 
-/* Seção Projetos */
 .projects {
   padding: 80px 20px;
 }
 
-/* Footer */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -334,7 +328,6 @@ footer p {
   margin: 10px 0;
 }
 
-/* Ícones Sociais */
 .social-icons {
   display: flex;
   justify-content: flex-start;
@@ -353,7 +346,6 @@ footer p {
   color: #000;
 }
 
-/* Efeito Fade-In */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
